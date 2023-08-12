@@ -1,104 +1,119 @@
-import React from 'react';
-import { Link } from 'react-router-dom'; 
-import './accountStyle.css';
-import login from './Login'
-
+import React from 'react'
+import './accountStyle.css'
 
 export default function Signup() {
-  const validatePasswords = () => {
-    const password = document.getElementById('password').value;
-    const confirmPassword = document.getElementById('confirmPassword').value;
-    
-    const passwordMismatchError = document.getElementById('passwordMismatchError');
-    const passwordMatchSuccess = document.getElementById('passwordMatchSuccess');
-    const passwordStrengthMessage = document.getElementById('passwordStrengthMessage');
-
-    if (password !== confirmPassword) {
-      passwordMismatchError.style.display = 'block';
-      passwordMatchSuccess.style.display = 'none';
-    } else {
-      passwordMismatchError.style.display = 'none';
-      passwordMatchSuccess.style.display = 'block';
-    }
-
-    // Add password strength checking logic and update passwordStrengthMessage accordingly
-  };
-
   return (
-    <div className="login-root">
-      <div className="box-root flex-flex flex-direction--column" style={{ minHeight: '100vh', flexGrow: 1 }}>
-        <div className="loginbackground box-background--white padding-top--64">
-          <div className="loginbackground-gridContainer">
-            {/* ...other boxes... */}
-          </div>
-        </div>
-        <div className="box-root padding-top--24 flex-flex flex-direction--column" style={{ flexGrow: 1, zIndex: 9 }}>
-          <div className="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
-            <h1><a href="index.html" rel="dofollow">CryptoPlay</a></h1>
-          </div>
-          <div className="formbg-outer">
-            <div className="formbg">
-              <div className="formbg-inner padding-horizontal--48">
-                <span className="padding-bottom--15">Create account</span>
-                <form id="stripe-login">
-                  <div className="field padding-bottom--24">
-                    <label htmlFor="name">Name</label>
-                    <input type="name" name="name" required />
-                  </div>
-                  <div className="field padding-bottom--24">
-                    <label htmlFor="email">Email</label>
-                    <input type="email" name="email" required />
-                  </div>
-                  <div className="field padding-bottom--24">
-                    <div className="grid--50-50">
-                      <label htmlFor="password">Password</label>
-                    </div>
-                    <input
-                      type="password"
-                      name="password"
-                      id="password"
-                      onChange={validatePasswords}
-                      required
-                    />
-                  </div>
-                  <div className="field padding-bottom--24">
-                    <div className="grid--50-50">
-                      <label htmlFor="password">Confirm Password</label>
-                    </div>
-                    <input
-                      type="password"
-                      name="confirmPassword"
-                      id="confirmPassword"
-                      onChange={validatePasswords}
-                      required
-                    />
-                    <div id="passwordMismatchError" style={{ color: 'red', display: 'none' }}>
-                      Password does not match
-                    </div>
-                    <div id="passwordMatchSuccess" style={{ color: 'green', display: 'none' }}>
-                      Password confirmed
-                    </div>
-                    <div id="passwordStrengthMessage" style={{ marginTop: '5px' }}></div>
-                  </div>
-                  <div className="field field-checkbox padding-bottom--24 flex-flex align-center">
-                  </div>
-                  <div className="field padding-bottom--24">
-                    <input type="submit" name="submit" value="Continue" />
-                  </div>
-                </form>
+    <div class="login-root">
+        <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
+          <div class="loginbackground box-background--white padding-top--64">
+            <div class="loginbackground-gridContainer">
+              <div class="box-root flex-flex" style="grid-area: top / start / 8 / end;">
+                <div class="box-root"
+                  style="background-image: linear-gradient(white 0%, rgb(247, 250, 252) 33%); flex-grow: 1;">
+                </div>
               </div>
-            </div>
-            <div className="footer-link padding-top--24">
-              <span>Already have an account? <Link to="/login">Login</Link></span>
-              <div className="listing padding-top--24 padding-bottom--24 flex-flex center-center">
-                <span><a href="#">© CryptoPlay</a></span>
-                <span><a href="#">Contact</a></span>
-                <span><a href="#">Privacy & terms</a></span>
+              <div class="box-root flex-flex" style="grid-area: 4 / 2 / auto / 5;">
+                <div class="box-root box-divider--light-all-2 animationLeftRight tans3s" style="flex-grow: 1;">
+                  <h1 style="text-align: center;">SQL</h1>
+                </div>
+              </div>
+              <div class="box-root flex-flex" style="grid-area: 6 / start / auto / 2;">
+                <div class="box-root box-background--blue800" style="flex-grow: 1;"></div>
+              </div>
+              <div class="box-root flex-flex" style="grid-area: 7 / start / auto / 4;">
+                <div class="box-root box-background--blue animationLeftRight" style="flex-grow: 1;">
+                  <h1 style="text-align: center;color: white;">React</h1>
+                </div>
+              </div>
+              <div class="box-root flex-flex" style="grid-area: 8 / 4 / auto / 6;">
+                <div class="box-root box-background--gray100 animationLeftRight tans3s" style="flex-grow: 1;">
+                  <h1 style="text-align: center;">Tezos</h1>
+                </div>
+              </div>
+              <div class="box-root flex-flex" style="grid-area: 2 / 15 / auto / end;">
+                <div class="box-root box-background--cyan200 animationRightLeft tans4s" style="flex-grow: 1;">
+                  <h1 style="text-align: center;">NodeJs</h1>
+                </div>
+              </div>
+              <div class="box-root flex-flex" style="grid-area: 3 / 14 / auto / end;">
+                <div class="box-root box-background--blue animationRightLeft" style="flex-grow: 1;">
+                  <h1 style="text-align: center;color: white;">CryptoPlay</h1>
+                </div>
+              </div>
+              <div class="box-root flex-flex" style="grid-area: 4 / 17 / auto / 20;">
+                <div class="box-root box-background--gray100 animationRightLeft tans4s" style="flex-grow: 1;">
+                  <h1 style="text-align: center;">BlockChain</h1>
+                </div>
+              </div>
+              <div class="box-root flex-flex" style="grid-area: 5 / 14 / auto / 17;">
+                <div class="box-root box-divider--light-all-2 animationRightLeft tans3s" style="flex-grow: 1;">
+                  <h1 style="text-align: center;">SmartPy</h1>
+                </div>
               </div>
             </div>
           </div>
+            <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+                <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+                    <h1><a href="index.html" rel="dofollow">CryptoPlay</a></h1>
+                </div>
+                <div class="formbg-outer">
+                    <div class="formbg">
+                        <div class="formbg-inner padding-horizontal--48">
+                            <span class="padding-bottom--15">Create account</span>
+                            <form id="stripe-login">
+                                <div class="field padding-bottom--24">
+                                    <label for="name">Name</label>
+                                    <input type="name" name="name" required />
+                                </div>
+                                <div class="field padding-bottom--24">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" required />
+                                </div>
+                                <div class="field padding-bottom--24">
+                                    <div class="grid--50-50">
+                                        <label for="password">Password</label>
+                                    </div>
+                                    <input type="password" name="password" id="password" oninput="validatePasswords()"
+                                        required />
+                                </div>
+                                <div class="field padding-bottom--24">
+                                    <div class="grid--50-50">
+                                        <label for="password">Confirm Password</label>
+                                    </div>
+                                    <input type="password" name="confirmPassword" id="confirmPassword"
+                                        oninput="validatePasswords()" required />
+                                    <div id="passwordMismatchError" style="color: red; display: none;">Password does not
+                                        match</div>
+                                    <div id="passwordMatchSuccess" style="color: green; display: none;">Password
+                                        confirmed</div>
+                                    <div id="passwordStrengthMessage" style="margin-top: 5px;"></div>
+                                </div>
+
+                                <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
+                                    {/* <!-- <label for="checkbox">
+                    <input type="checkbox" name="checkbox"> Stay signed in for a week
+                  </label> --> */}
+                                </div>
+                                <div class="field padding-bottom--24">
+                                    <input type="submit" name="submit" value="Continue"/>
+                                </div>
+                                    {/* <!-- <div class="field">
+                    <a class="ssolink" href="#">Use single sign-on (Google) instead</a>
+                    </div> --> */}
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer-link padding-top--24">
+                        <span>Already have an account? <a href="login.html">Login</a></span>
+                        <div class="listing padding-top--24 padding-bottom--24 flex-flex center-center">
+                            <span><a href="#">© CryptoPlay</a></span>
+                            <span><a href="#">Contact</a></span>
+                            <span><a href="#">Privacy & terms</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  );
+  )
 }

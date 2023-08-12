@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; 
+// import { Link } from 'react-router-dom'; 
 import './Navbar.css';
 import logo from '../assets/images/2023/logo/logo.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 // import '@popperjs/core/dist/umd/popper.min.js';
-import login from './Login'
 
 export default function Navbar() {
   return (
@@ -37,8 +36,7 @@ export default function Navbar() {
             <a className="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
-        <Link to="/login" className="btn btn-primary">My Account</Link>
-        {/* <a href={login} className="btn btn-primary">My Account</a> */}
+        <a href="login.html" className="btn btn-primary">My Account</a>
       </div>
     </div>
   </nav>

@@ -1,8 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './accountStyle.css';
-import Signup from './Signup'
-import Navbar from './Navbar';
+import './loginStyle.css'
 
 export default function Login() {
   return (
@@ -55,8 +52,7 @@ export default function Login() {
         </div>
         <div className="box-root padding-top--24 flex-flex flex-direction--column" style={{ flexGrow: 1, zIndex: 9 }}>
           <div className="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
-          {/* <a href="index.html" rel="dofollow">CryptoPlay</a> */}
-            <h1> <Link to="/Navbar" rel="dofollow">CryptoPlay</Link></h1>
+            <h1><a href="index.html" rel="dofollow">CryptoPlay</a></h1>
           </div>
           <div className="formbg-outer">
             <div className="formbg">
@@ -76,20 +72,22 @@ export default function Login() {
                     </div>
                     <input type="password" name="password" required />
                   </div>
-                  {/* Commenting out the checkbox field */}
-                  {/* <div className="field field-checkbox padding-bottom--24 flex-flex align-center">
-                    <label htmlFor="checkbox">
+                  <div className="field field-checkbox padding-bottom--24 flex-flex align-center">
+                    {/* <!-- <label htmlFor="checkbox">
                       <input type="checkbox" name="checkbox" /> Stay signed in for a week
-                    </label>
-                  </div> */}
+                    </label> --> */}
+                  </div>
                   <div className="field padding-bottom--24">
                     <input type="submit" name="submit" value="Continue" />
                   </div>
+                  {/* <div className="field">
+                    <a className="ssolink" href="#">Use single sign-on (Google) instead</a>
+                  </div> */}
                 </form>
               </div>
             </div>
             <div className="footer-link padding-top--24">
-              <span>Don't have an account? <Link to="/Signup">Sign Up</Link></span>
+              <span>Don't have an account? <a href="signup.html">Sign up</a></span>
               <div className="listing padding-top--24 padding-bottom--24 flex-flex center-center">
                 <span><a href="#">© CryptoPlay</a></span>
                 <span><a href="#">Contact</a></span>
