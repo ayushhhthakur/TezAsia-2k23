@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.98520fd9.css",
+    "main.js": "/static/js/main.dc4e87ed.js",
+    "static/js/496.3521c230.chunk.js": "/static/js/496.3521c230.chunk.js",
+    "static/media/react-logo.png": "/static/media/react-logo.becbab0ab5d2271d2831.png",
+    "static/media/logo.png": "/static/media/logo.775dd682dc1d9c1c0551.png",
+    "static/media/nodejs-logo.png": "/static/media/nodejs-logo.290f630040630c5948b6.png",
+    "static/media/eshasuri.jpg": "/static/media/eshasuri.f3e6324862ef0f4de0af.jpg",
+    "static/media/tezos-logo.png": "/static/media/tezos-logo.44d05c06a6cd0e2053de.png",
+    "static/media/ayushthakur.jpg": "/static/media/ayushthakur.ad6cb7ea4632ac9308bd.jpg",
+    "static/media/garimasaigal.jpg": "/static/media/garimasaigal.04c7b1c7938d8586b0f2.jpg",
+    "static/media/manavjamwal.jpg": "/static/media/manavjamwal.6094ae915bf8cc538bec.jpg",
+    "index.html": "/index.html",
+    "main.98520fd9.css.map": "/static/css/main.98520fd9.css.map",
+    "main.dc4e87ed.js.map": "/static/js/main.dc4e87ed.js.map",
+    "496.3521c230.chunk.js.map": "/static/js/496.3521c230.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98520fd9.css",
+    "static/js/main.dc4e87ed.js"
+  ]
+}
