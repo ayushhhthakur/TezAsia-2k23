@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { Button } from "./styles/Button";
 import { NavLink } from "react-router-dom";
 
 const Error = () => {
+  const handleGoBackClick = () => {
+    // Scroll to the top of the page when the "Go Back" button is clicked
+    window.scrollTo(0, 0);
+  };
+
   return (
     <Wrapper>
       <img src="../images/error.svg" alt="error" />
-      <NavLink to="/">
-        <Button className="btn"> Go Back</Button>
+      <NavLink to="/" onClick={handleGoBackClick}>
+        <Button className="btn">Go Back</Button>
       </NavLink>
     </Wrapper>
   );
