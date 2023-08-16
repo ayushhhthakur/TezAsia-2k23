@@ -3,15 +3,15 @@
 
 Project Name : CryptoPlay
 
-Project's Description
+Project's Description:
 
-What problem you are trying to solve
+What problem you are trying to solve:
 
 Tech Stack used while building the project: React + Vite, JavaScript, SmartPy.
 
-Project Demo Photos, Videos
+Project Demo Photos, Videos:
 
-Deployed Smart Contract's Link
+Deployed Smart Contract's Link:
 
 If your project is deployed, then include the Live Project Link: [Project Demo](https://cryptoplay.netlify.app/)
 
