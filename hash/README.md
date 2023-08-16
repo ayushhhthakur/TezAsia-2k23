@@ -17,4 +17,9 @@ If your project is deployed, then include the Live Project Link: [Project Demo](
 
 PPT link:
 
-Team Members' Info.
+##
+Team Members' Info:
+- Ayush Thakur
+- Esha Suri
+- Graima Saigal
+- Manav Jamwal
