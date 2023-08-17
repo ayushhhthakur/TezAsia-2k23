@@ -4,10 +4,10 @@
 Project Name : CryptoPlay
 
 ##
-Project's Description:
+Project's Description: ...
 
 ##
-What problem you are trying to solve:
+What problem you are trying to solve: ...
 
 ##
 Tech Stack used while building the project: React + Vite, JavaScript, SmartPy.
